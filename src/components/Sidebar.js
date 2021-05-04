@@ -1,5 +1,7 @@
 import React from "react";
 
+/* METTRE LA VALEUR DANS LE RANGE : */
+
 const Sidebar = () => {
   return (
     <div className="col-lg-3 mb-4">
@@ -23,12 +25,19 @@ const Sidebar = () => {
         <label htmlFor="range" className="form-label fw-bold mb-3">
           La taille de police
         </label>
-        <imput id="range" type="range" className="form-range" min="8" max="48" step="1" value=""></imput>
+        <input id="range" type="range" className="form-range" min="8" max="48" step="1" value={"0"}></input>
 
-        <label htmlFor="customRange3" className="form-label">
-          La taille de police
+        <label htmlFor="customRange3" className="form-label fw-bold text-danger mb-3">
+          Range pour test
         </label>
-        <input id="customRange3" type="range" className="form-range" min="0" max="5" step="0.5"></input>
+        <input
+          id="customRange3"
+          type="range"
+          className="form-range form-range-track-bg: gray-300"
+          min="0"
+          max="5"
+          step="0.5"
+        ></input>
       </div>
     </div>
   );
