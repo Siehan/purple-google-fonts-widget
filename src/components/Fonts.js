@@ -45,7 +45,9 @@ const Fonts = () => {
       <div className="col-lg-9">
         <section className="row mb-5">
           <h2 className="mb-3">
-            <span className="badge bg-danger">Les plus récentes</span>
+            {sort === "date" && <span className="badge bg-danger">Les plus récentes</span>}
+            {sort === "popularity" && <span className="badge bg-danger">Les plus populaires</span>}
+            {sort === "trending" && <span className="badge bg-danger">Top 10 trending</span>}
           </h2>
           {data.map((el) => {
             return (

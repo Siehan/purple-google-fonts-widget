@@ -16,7 +16,7 @@ const CardFont = ({ name, variants, cat, file, size, text }) => {
         <GoogleFontLoader
           fonts={[
             {
-              font: `Roboto`,
+              font: `${name}`,
             },
           ]}
         />

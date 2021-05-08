@@ -10,6 +10,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.custom-element {
+  color: orange-500;
+  background-color: orange-500;
+}
+
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
