@@ -1,15 +1,24 @@
 import React from "react";
 
-/* METTRE LA VALEUR DANS LE RANGE : */
+const Sidebar = ({ text, setText, size, setSize, setSort }) => {
+  const handleChangeText = (e) => {
+    setText(e.target.value);
+  };
 
-const Sidebar = () => {
+  const handleSizeChange = (e) => {
+    setSize(e.target.value);
+  };
+
+  const handleSortChange = (e) => {
+    setSort(e.target.value);
+  };
   return (
     <div className="col-lg-3 mb-4">
       <div style={{ position: "sticky", top: 0 }}>
         <label className="fw-bold mb-2" htmlFor="sort">
           Afficher des polices
         </label>
-        <select id="sort" className="form-select mb-4">
+        <select id="sort" className="form-select mb-4" onChange={handleSortChange}>
           <option value="date">Les plus récentes</option>
           <option value="popularity">Les plus populaires</option>
           <option value="trending">Top 10 trending</option>
@@ -18,14 +27,23 @@ const Sidebar = () => {
           <label htmlFor="text" className="form-label fw-bold mb-3">
             Tapez votre texte
           </label>
-          <textarea id="text" className="form-control">
-            Portez ce vieux whisky au juge blond qui fume !? 0123456789
+          <textarea id="text" className="form-control" onChange={handleChangeText}>
+            {text}
           </textarea>
         </div>
         <label htmlFor="range" className="form-label fw-bold mb-3">
           La taille de police
         </label>
-        <input id="range" type="range" className="form-range" min="8" max="48" step="1" value={"0"}></input>
+        <input
+          id="range"
+          type="range"
+          className="form-range"
+          min="8"
+          max="48"
+          step="1"
+          value={size}
+          onChange={handleSizeChange}
+        ></input>
       </div>
     </div>
   );
