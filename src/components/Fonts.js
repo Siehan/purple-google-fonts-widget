@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import CardFont from "./CardFont";
 import Sidebar from "./Sidebar";
 
-//importer le site de google gérer le cash
+// importer le site de google gérer le cash
 
 const Fonts = () => {
   const [data, setData] = useState([]);
@@ -46,8 +46,8 @@ const Fonts = () => {
         <section className="row mb-5">
           <h2 className="mb-3">
             {sort === "date" && <span className="badge bg-danger">Les plus récentes</span>}
-            {sort === "popularity" && <span className="badge bg-danger">Les plus populaires</span>}
-            {sort === "trending" && <span className="badge bg-danger">Top 10 trending</span>}
+            {sort === "popularity" && <span className="badge bg-success">Les plus populaires</span>}
+            {sort === "trending" && <span className="badge bg-primary">Top 10 trending</span>}
           </h2>
           {data.map((el) => {
             return (

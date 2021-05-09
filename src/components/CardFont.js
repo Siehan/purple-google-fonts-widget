@@ -23,7 +23,7 @@ const CardFont = ({ name, variants, cat, file, size, text }) => {
         <p className="sample" style={{ fontFamily: `${name}`, fontSize: `${size}px` }}>
           {text}
         </p>
-        <a rel="noopener noreferrer" target="_blank" className="text-danger" href={file}>
+        <a rel="noopener noreferrer" target="_blank" className="text-danger bg-light" href={file}>
           Voir sur Google Fonts (ouvre un nouveau tab)
         </a>
       </div>

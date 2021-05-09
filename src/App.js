@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Fonts from "./components/Fonts";
 import Footer from "./components/Footer";
 import ToggleModeButton from "./components/ToggleModeButton";
-//import ColorMode from "./components/ColorMode";
+import colors from "./colors";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className={modeClasses}>
-        <Header />
+        <Header colors={colors} />
         <ToggleModeButton darkMode={darkMode} setDarkMode={setDarkMode} />
         <div className="container min-vh-100">
           <Fonts />
