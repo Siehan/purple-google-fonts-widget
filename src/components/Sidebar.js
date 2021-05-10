@@ -27,9 +27,7 @@ const Sidebar = ({ text, setText, size, setSize, setSort }) => {
           <label htmlFor="text" className="form-label fw-bold mb-3">
             Tapez votre texte
           </label>
-          <textarea id="text" className="form-control" onChange={handleChangeText}>
-            {text}
-          </textarea>
+          <textarea value={text} className="form-control" onChange={handleChangeText}></textarea>
         </div>
         <label htmlFor="range" className="form-label fw-bold mb-3">
           La taille de police

@@ -1,15 +1,27 @@
 const colors = [
   {
-    name: "YouTube",
+    name: "YouTube 1",
+    start: "rgb(255, 0, 0)",
+    end: "rgb(255, 0, 0)",
+    tags: ["rouge"],
+  },
+  {
+    name: "YouTube 2",
     start: "rgb(229, 45, 39)",
     end: "rgb(229, 45, 39)",
     tags: ["rouge"],
   },
   {
-    name: "YouTube",
+    name: "YouTube 3",
     start: "rgb(229, 45, 39)",
     end: "rgb(179, 18, 23)",
-    tags: ["rouge2"],
+    tags: ["rouge"],
+  },
+  {
+    name: "Sun Burst Gradient",
+    start: "rgb(255, 191, 0)",
+    end: "rgb(255, 191, 0)",
+    tags: ["jaune"],
   },
   {
     name: "Sun on the Horizon",
@@ -18,7 +30,7 @@ const colors = [
     tags: ["jaune"],
   },
   {
-    name: "Sun Burst Gradient",
+    name: "Sun Burst Gradient 2",
     start: "rgb(253, 168, 0, 1)",
     end: "rgb(253, 168, 0, 1)",
     tags: ["jaune"],
@@ -30,32 +42,31 @@ const colors = [
     tags: ["bleu"],
   },
   {
-    name: "Gradient",
+    name: "Gradient2",
     start: "rgb(3, 126, 243, 1)",
     end: "rgb(61, 3, 243, 1)",
     tags: ["bleu"],
   },
   {
-    name: "Gradient",
+    name: "Gradient3",
     start: "rgb(61, 3, 243, 1)",
     end: "rgb(61, 3, 243, 1)",
     tags: ["bleu"],
   },
   {
-    name: "a Gradient",
-    start: "rgb(30,138,17,1)",
-    end: "rgb(20,185,0,1)",
-    tags: ["vert"],
-  },
-
-  {
-    name: "a Gradient",
+    name: "a Gradient 1",
     start: "rgb(30, 138, 17)",
     end: "rgb(30, 138, 17)",
     tags: ["vert"],
   },
   {
-    name: "a2 Gradient",
+    name: "a Gradient 2",
+    start: "rgb(30,138,17,1)",
+    end: "rgb(20,185,0,1)",
+    tags: ["vert"],
+  },
+  {
+    name: "a2 Gradient 3",
     start: "rgb(20,185,0,1)",
     end: "rgb(20,185,0,1)",
     tags: ["vert"],
