@@ -9,8 +9,10 @@ const Fonts = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [text, setText] = useState("Portez ce vieux whisky au juge blond qui fume !? 0123456789"); // pour changer l'input text
-  const [size, setSize] = useState(19); // pour changer la taille des inputs text
+  //const [size, setSize] = useState(19); // pour changer la taille des inputs text
+  const [size, setSize] = useState(20); // pour changer la taille des inputs text
   const [sort, setSort] = useState("date"); // pour changer la page de préférence
+  //const [filter, setFilter] = useState("Par ordre alphabétique");
 
   const url = `https://www.googleapis.com/webfonts/v1/webfonts?key=${process.env.REACT_APP_GOOGLEFONT_API_KEY}&sort=${sort}`;
 
@@ -27,7 +29,7 @@ const Fonts = () => {
       })
       .then((data) => {
         console.log(data);
-        setData(data.items.slice(0, 10));
+        setData(data.items.slice(0, 100));
         setLoading(false);
       })
       .catch((error) => {
@@ -48,6 +50,8 @@ const Fonts = () => {
             {sort === "date" && <span className="badge bg-danger">Les plus récentes</span>}
             {sort === "popularity" && <span className="badge bg-success">Les plus populaires</span>}
             {sort === "trending" && <span className="badge bg-primary">Top 10 trending</span>}
+            {sort === "alpha" && <span className="badge bg-warning">Par ordre alphabétique</span>}
+            {sort === "style" && <span className="badge bg-info">Par nombre de variants</span>}
           </h2>
           {data.map((el) => {
             return (

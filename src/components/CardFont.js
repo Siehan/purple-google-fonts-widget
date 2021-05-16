@@ -6,12 +6,12 @@ const CardFont = ({ name, variants, cat, file, size, text }) => {
   return (
     <article className="col-md-6 mb-4">
       <div className="shadow-sm border p-3 h-100 rounded">
-        <h2 className="h6 d-flex align-items-center justify-content-between">
+        <h2 className="fs-4 text h6 d-flex align-items-center justify-content-between">
           <span>{name}</span>
           <small>{variants.length} variant(s)</small>
         </h2>
         <p>
-          <span className="badge bg-dark">{cat}</span>
+          <span className="badge bg-primary border-white fs-6 text-white">{cat}</span>
         </p>
         <GoogleFontLoader
           fonts={[
@@ -23,8 +23,8 @@ const CardFont = ({ name, variants, cat, file, size, text }) => {
         <p className="sample" style={{ fontFamily: `${name}`, fontSize: `${size}px` }}>
           {text}
         </p>
-        <a rel="noopener noreferrer" target="_blank" className=" text-danger" href={file}>
-          Voir sur Google Fonts (ouvre un nouveau tab)
+        <a rel="noopener noreferrer" target="_blank" className=" text-dark bg-light" href={file}>
+          Voir sur <i className="fw-bold">Google Fonts</i> (ouvre un nouveau tab)
         </a>
       </div>
     </article>
