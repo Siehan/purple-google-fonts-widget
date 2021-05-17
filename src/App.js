@@ -11,7 +11,6 @@ import colors from "./colors";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const modeClasses = darkMode ? "bg-dark text-white" : "bg-light";
-
   return (
     <>
       <div className={modeClasses}>

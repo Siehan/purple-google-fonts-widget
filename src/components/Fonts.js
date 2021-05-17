@@ -29,7 +29,7 @@ const Fonts = () => {
       })
       .then((data) => {
         console.log(data);
-        setData(data.items.slice(0, 100));
+        setData(data.items.slice(0, 50));
         setLoading(false);
       })
       .catch((error) => {
