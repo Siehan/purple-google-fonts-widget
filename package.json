@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Siehan/purple-google-fonts-widget.git",
+  "author": "Siehan <memain.ye.sylvie@gmail.com>",
+  "license": "MIT"
 }
