@@ -43,5 +43,8 @@
   "main": "index.js",
   "repository": "https://github.com/Siehan/purple-google-fonts-widget.git",
   "author": "Siehan <memain.ye.sylvie@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "postcss-double-position-gradients": "^1.0.0"
+  }
 }
